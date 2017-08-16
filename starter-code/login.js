@@ -13,7 +13,8 @@ while (x != userLogin.userPass) {
   x = prompt(`Incorrect, enter password for ${userLogin.userName}
     Remaining attempts: ${y}`);
   tries.push('');
-  if (tries.length == y) {
+  y --;
+  if (tries.length == 3) {
     alert('Too many attempts, goodbye.');
     break
   }
